@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ScamReportGenerator/static/css/main.5143675d.chunk.css",
-    "main.js": "/ScamReportGenerator/static/js/main.22b47817.chunk.js",
-    "main.js.map": "/ScamReportGenerator/static/js/main.22b47817.chunk.js.map",
+    "main.js": "/ScamReportGenerator/static/js/main.519997be.chunk.js",
+    "main.js.map": "/ScamReportGenerator/static/js/main.519997be.chunk.js.map",
     "runtime-main.js": "/ScamReportGenerator/static/js/runtime-main.e1cc4b30.js",
     "runtime-main.js.map": "/ScamReportGenerator/static/js/runtime-main.e1cc4b30.js.map",
     "static/css/2.ef9168ec.chunk.css": "/ScamReportGenerator/static/css/2.ef9168ec.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.7da18979.chunk.js",
     "static/css/main.5143675d.chunk.css",
-    "static/js/main.22b47817.chunk.js"
+    "static/js/main.519997be.chunk.js"
   ]
 }
