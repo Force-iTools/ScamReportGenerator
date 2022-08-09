@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ScamReportGenerator/static/css/main.179e4374.chunk.css",
-    "main.js": "/ScamReportGenerator/static/js/main.d0187fbf.chunk.js",
-    "main.js.map": "/ScamReportGenerator/static/js/main.d0187fbf.chunk.js.map",
-    "runtime-main.js": "/ScamReportGenerator/static/js/runtime-main.ec8523d8.js",
-    "runtime-main.js.map": "/ScamReportGenerator/static/js/runtime-main.ec8523d8.js.map",
-    "static/css/2.73420eac.chunk.css": "/ScamReportGenerator/static/css/2.73420eac.chunk.css",
-    "static/js/2.4ce3bad2.chunk.js": "/ScamReportGenerator/static/js/2.4ce3bad2.chunk.js",
-    "static/js/2.4ce3bad2.chunk.js.map": "/ScamReportGenerator/static/js/2.4ce3bad2.chunk.js.map",
+    "main.css": "/ScamReportGenerator/static/css/main.5143675d.chunk.css",
+    "main.js": "/ScamReportGenerator/static/js/main.22b47817.chunk.js",
+    "main.js.map": "/ScamReportGenerator/static/js/main.22b47817.chunk.js.map",
+    "runtime-main.js": "/ScamReportGenerator/static/js/runtime-main.e1cc4b30.js",
+    "runtime-main.js.map": "/ScamReportGenerator/static/js/runtime-main.e1cc4b30.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/ScamReportGenerator/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.7da18979.chunk.js": "/ScamReportGenerator/static/js/2.7da18979.chunk.js",
+    "static/js/2.7da18979.chunk.js.map": "/ScamReportGenerator/static/js/2.7da18979.chunk.js.map",
     "index.html": "/ScamReportGenerator/index.html",
-    "static/css/2.73420eac.chunk.css.map": "/ScamReportGenerator/static/css/2.73420eac.chunk.css.map",
-    "static/css/main.179e4374.chunk.css.map": "/ScamReportGenerator/static/css/main.179e4374.chunk.css.map",
-    "static/js/2.4ce3bad2.chunk.js.LICENSE.txt": "/ScamReportGenerator/static/js/2.4ce3bad2.chunk.js.LICENSE.txt"
+    "static/css/2.ef9168ec.chunk.css.map": "/ScamReportGenerator/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.5143675d.chunk.css.map": "/ScamReportGenerator/static/css/main.5143675d.chunk.css.map",
+    "static/js/2.7da18979.chunk.js.LICENSE.txt": "/ScamReportGenerator/static/js/2.7da18979.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec8523d8.js",
-    "static/css/2.73420eac.chunk.css",
-    "static/js/2.4ce3bad2.chunk.js",
-    "static/css/main.179e4374.chunk.css",
-    "static/js/main.d0187fbf.chunk.js"
+    "static/js/runtime-main.e1cc4b30.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.7da18979.chunk.js",
+    "static/css/main.5143675d.chunk.css",
+    "static/js/main.22b47817.chunk.js"
   ]
 }
