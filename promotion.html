@@ -1,0 +1,672 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>香港警察西九龙总区防止罪案办公室</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ff09eb75-a630-4978-9284-228fcfb5b1c8" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/KW_Logo_%25E5%25B7%25B2%25E9%2580%2580%25E5%259C%25B0(1).jpg"/></div><h1 class="page-title">香港警察西九龙总区防止罪案办公室</h1></header><div class="page-body"><figure class="block-color-red_background callout" style="white-space:pre-wrap;display:flex" id="469e2ab8-3f56-4669-8ac3-d49b9c3095b9"><div style="font-size:1.5em"><span class="icon">🔥</span></div><div style="width:100%">以下是送给刚入大学的萌新们的防骗小指南，希望各位同学花费几分钟时间详细阅读，祝大家有一个愉快的校园生活。</div></figure><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="9dd1964a-5e6d-4997-ba14-5492a8c0b7f5"><div style="font-size:1.5em"><span class="icon">📢</span></div><div style="width:100%">有鉴于网上骗案的数量有上升趋势，为令港漂生了解现时香港网上诈骗的最新形式和发展趋势，西九龙总区防止罪案办公室的阿Sir们建立了此网站，列出了最新式的诈骗手法以及提防技巧，并整合了跟警方及防骗相关的连结供各位参考。以便学生了解最新防骗资讯和贴士。</div></figure><h3 id="a151cc09-c54a-4844-a4d4-75c7f8e258c8" class="">👥<mark class="highlight-blue">目录</mark></h3><hr id="63048e37-f2fa-4fe6-b699-b1e00ab635dd"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="49245ba4-86c0-4b39-b6df-ab34af0af50e"><div style="font-size:1.5em"><span class="icon">🧠</span></div><div style="width:100%"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8"><mark class="highlight-blue">防骗小贴士</mark></a></strong><ul id="e63d978f-d7fc-4740-bf40-30577d0f51e7" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">求职陷阱</a></strong></li></ul><ul id="0e28b75f-7530-402e-bf52-74a46aaaabce" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">网恋投资陷阱</a></strong></li></ul><ul id="658a8be3-5dc6-4180-a124-894a010d438c" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">假冒官员或公安</a></strong></li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a4a3caf4-8988-48db-bd3d-974f6c8c166b"><div style="font-size:1.5em"><span class="icon">🔗</span></div><div style="width:100%"><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8"><strong><mark class="highlight-blue">友情连结</mark></strong></a><ul id="107d1be4-55a8-45a6-a826-e72922e4de98" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">香港警务处</a></strong></li></ul><ul id="0f0fc7bc-0b81-40f6-abe7-c97f9c3855c7" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">反诈骗协调中心 ADCC</a></strong></li></ul><ul id="355372c8-0877-4bf7-b8ec-a421c655c902" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">Cyber Defender 守网者</a></strong></li></ul><ul id="8b14fe60-0159-42cc-8f3f-1a79b516a9c3" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">香港警队流动应用程式</a></strong></li></ul><ul id="b774b348-3c30-45e8-9ec2-b4e6565bf2d2" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">香港警队微信</a></strong></li></ul><ul id="ac166065-339a-4c1f-b243-14ffd0f6be1f" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">香港警队微博</a></strong></li></ul><ul id="269e9edf-319b-4c43-8c49-e87101654b7d" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.notion.so/ff09eb75a63049789284228fcfb5b1c8">电话骗案宣传片</a></strong></li></ul></div></figure><p id="531a5fbb-cde5-4073-a1b6-b89cb617d938" class="">
+</p><h3 id="897948ab-f428-4577-8642-3844990e190d" class="">🧠<strong><mark class="highlight-blue">防骗小贴士</mark></strong></h3><hr id="63333cd0-bbb7-4428-bea4-648d4dea19e5"/><ul id="e82e3d6f-c112-4ab1-80d3-6bca80689cae" class="toggle"><li><details open=""><summary><strong>求职陷阱</strong></summary><ul id="e8935f9a-f200-4ddd-b726-caf0c84ce9f0" class="bulleted-list"><li style="list-style-type:disc">应透过可信赖的求职途径寻找工作 (如劳工处)</li></ul><ul id="225a4ba0-85b2-4b20-ac66-ef64f6214ca2" class="bulleted-list"><li style="list-style-type:disc">应了解聘方公司的背景及业务性质</li></ul><ul id="71081776-b5fa-483a-8034-d6205787196b" class="bulleted-list"><li style="list-style-type:disc">提防<strong>不拘学历或工作经验</strong>而报酬优厚的招聘广告</li></ul><ul id="cbc5389a-f999-4106-9c02-c64ac161e6f2" class="bulleted-list"><li style="list-style-type:disc">切勿随便将个人资料交予他人</li></ul><ul id="5144e903-0ee8-415d-a584-30c47fbd96b0" class="bulleted-list"><li style="list-style-type:disc">如被要求缴交行政费或申请贷款，应加倍小心</li></ul></details></li></ul><ul id="98e9186a-39f2-4d93-9867-240e11927d94" class="toggle"><li><details open=""><summary><strong>网恋投资陷阱</strong></summary><ul id="3034131a-fc37-4555-a459-04319a1f900e" class="bulleted-list"><li style="list-style-type:disc">只谈情，不谈钱 ── 骗徒会以不同形式诱使受害人汇款 (包括但不限于假装住院、生意出现困难、被人扣押要求保释及于见面前要求交保证金)，坚持不汇款以免被骗</li></ul><ul id="53d5246c-05da-486a-b563-4e776a86db14" class="bulleted-list"><li style="list-style-type:disc">利用搜寻器搜寻对方社交帐户的照片</li></ul><ul id="3523c982-e2b4-488d-b4dc-20e7d56cd3ba" class="bulleted-list"><li style="list-style-type:disc">查看对方帐户的朋友圈是否有异常</li></ul><ul id="50a4a1c2-92cb-44a5-98fb-d9573f1a3726" class="bulleted-list"><li style="list-style-type:disc">如对对方身份有怀疑，可尝试与对方视像通话</li></ul><ul id="9c8d3de4-e80e-46a9-ae8e-c8ac3ae83fc8" class="bulleted-list"><li style="list-style-type:disc">切勿下载不明来历的应用程式</li></ul><ul id="6b04204e-1c00-454b-bd8d-cab53245780f" class="bulleted-list"><li style="list-style-type:disc">提防回报高得不切实际的投资计划</li></ul></details></li></ul><ul id="357644d5-2988-4193-9b1c-228bc5f5a315" class="toggle"><li><details open=""><summary><strong>假冒官员或公安</strong></summary><ul id="9621ecbe-504d-4c32-a3c7-e6e1cb5781cc" class="bulleted-list"><li style="list-style-type:disc">执法部门人员或政府机构职员不会以预录语音形式致电市民，也不会要求市民交出网上银行帐户及密码，或交出款项以证清白</li></ul><ul id="b3662cfc-7558-4295-b01b-81442d8709b3" class="bulleted-list"><li style="list-style-type:disc">如遇到有人自称执法部门人员及政府机构职员，以不同理由指示市民交出个人资料及财产，应该主动查证及再三向相关机构核实来电者的身份</li></ul><ul id="1497befd-51d7-4b55-8751-e8809c2864a3" class="bulleted-list"><li style="list-style-type:disc">切勿向陌生人透露个人资料：包括姓名、身份证号码、银行户口号码、网上银行帐户及密码</li></ul><ul id="ca7cc3c3-6ba0-4892-8fb7-b997250994b7" class="bulleted-list"><li style="list-style-type:disc">切勿下载不明来历的应用程式，或者将任何资料输入到不明来历的应用程式或网址</li></ul><ul id="6aa9219e-12e0-48a7-9476-dd9210a626c0" class="bulleted-list"><li style="list-style-type:disc">如果突然收不到银行的转帐或签账通知短讯，便要提高警觉并向银行查询</li></ul></details></li></ul><p id="173e4b71-3c1a-46bd-bf68-f90c3e9a1848" class="">
+</p><p id="6ea24eed-7247-4bba-80b8-455fe4786c14" class="">如有任何怀疑,即致电防骗易热线18222</p><p id="bcaaa6ea-67a1-474c-a8bc-c1acae00214f" class="">如已受骗，切勿再联络骗徒并马上致电999寻求协助</p><p id="984a407d-1f85-4302-b8ef-cda4c9845b82" class="">
+</p><h3 id="d7328ceb-bf44-41db-885f-636fb278bbff" class="">🔗<mark class="highlight-blue">友情连结</mark></h3><hr id="6d16dd43-7eea-47f7-a7d5-3ec1f19fb1b5"/><div id="12d4cf3a-42d3-4e20-aa37-441178cbd978" class="column-list"><div id="d378bafc-1cde-4818-9f5b-e22b59507dd7" style="width:43.75%" class="column"><figure id="5df3dbc6-12cb-4608-a22f-0cdc15c991a6" class="image"><a href="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/hkpf_logo_200px.png"><img style="width:864px" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/hkpf_logo_200px.png"/></a></figure></div><div id="0e851555-903a-438c-b58d-c667a75e1a90" style="width:56.25000000000002%" class="column"><p id="f267922f-464f-45b9-8b88-47441269f9a0" class=""><a href="https://www.police.gov.hk/ppp_sc/"><strong>香港警务处</strong></a></p><blockquote id="0aa05b1b-1361-4f8c-b321-a6cc13d23767" class="">本网页旨在让公众更加认识警队，并载述有关警队为社会各界提供的广泛服务。</blockquote><ul id="dd2d1604-d53d-4ddd-97e7-c939ebd03c29" class="bulleted-list"><li style="list-style-type:disc">接收由警队提供的新闻公告</li></ul><ul id="2d5e8c42-ce02-49af-b26d-cdb294117409" class="bulleted-list"><li style="list-style-type:disc">接收警方最新发布的活动和资讯</li></ul><ul id="48aa1be4-421e-479a-acc8-7955920a2c62" class="bulleted-list"><li style="list-style-type:disc">了解警队不同社交媒体的入口</li></ul></div></div><hr id="9a96ee96-e606-484d-a566-52f5c9c6c959"/><div id="c99c780a-94d5-48f1-be4d-e966a9952d1f" class="column-list"><div id="d471ca2d-7c34-45ce-b28e-3fa16473c8c8" style="width:43.75%" class="column"><figure id="ef04a93e-2bee-4c8f-977e-a962a01da876" class="image"><a href="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/adcc_logo.png"><img style="width:288px" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/adcc_logo.png"/></a></figure></div><div id="0f3d4592-02b1-491d-92e9-693f89ad620d" style="width:56.25000000000004%" class="column"><p id="e571c02c-dd45-4a45-b9c8-8d857bf8bb84" class=""><a href="https://www.adcc.gov.hk/zh-cn/home.html"><strong>反诈骗协调中心 ADCC</strong></a></p><blockquote id="a1f335b3-133d-4fb6-b51a-c9043736c2e4" class="">ADCC 设立了二十四小时电话谘询热线“18222”。市民亦可浏览官网，以获得最新骗案手法资讯及警示。</blockquote><ul id="389f67e4-875b-4768-9115-ae16b220f19e" class="bulleted-list"><li style="list-style-type:disc">定期发布最新骗案手法</li></ul><ul id="26c87e7d-4ac0-4733-b422-91dc4a5d740f" class="bulleted-list"><li style="list-style-type:disc">显示每月防骗活动时间表</li></ul><ul id="575a0508-8a8d-4c43-be55-dfc9db9fba39" class="bulleted-list"><li style="list-style-type:disc">为市民传递不同防骗技巧</li></ul></div></div><hr id="109eba47-c254-4ce1-936f-bd1a2cc229d1"/><div id="d7ba6dd0-b0d1-43ce-b4f6-c66bc482864b" class="column-list"><div id="77da189d-b072-481e-8708-e21eb063364a" style="width:43.75%" class="column"><figure id="aeedccdb-9a03-44c0-bcf6-f7e65a8edcd3" class="image"><a href="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/official-logo-design5_middle.webp"><img style="width:288px" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/official-logo-design5_middle.webp"/></a></figure></div><div id="689a05d0-2096-4393-b869-5ad0a4a171c2" style="width:56.25%" class="column"><p id="ce1347e3-88e9-4531-be67-17580351736d" class=""><strong><a href="https://cyberdefender.hk/zh-cn/">守网者 Cyber Defender</a></strong></p><blockquote id="5a410628-6474-4a00-a24c-fb54eb6e4638" class="">由于网上存在很多假冒资讯、钓鱼网站、诈骗网站及假冒电邮。如市民对网站连结或电邮的可信性有怀疑，可到守网者提供的「<strong>网络钓鱼诈骗搜寻器</strong>」进行检查。</blockquote><ul id="33554db2-5423-493c-88cc-fdb6a5b4867c" class="bulleted-list"><li style="list-style-type:disc">内建的<strong>网络钓鱼诈骗搜寻器</strong>协助识别高危网站/电邮</li></ul><ul id="bf8a5ac0-2964-431e-bca6-1c67e8f37848" class="bulleted-list"><li style="list-style-type:disc">分享最新网络安全知识</li></ul><ul id="18c4f729-50ed-4797-b1d3-64a3ada277ff" class="bulleted-list"><li style="list-style-type:disc">分享最新网络罪案的趋势和数据</li></ul></div></div><hr id="d2c4e046-1f3f-48ca-aefe-ddb86e7cbbcc"/><div id="e9e7100b-2b88-4c79-b210-67c0ce15b344" class="column-list"><div id="544185d1-d8cf-46ea-9def-d605a63ef635" style="width:43.75%" class="column"><figure id="41267275-b42f-46f1-8857-437aa911534c" class="image"><a href="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/unnamed.webp"><img style="width:240px" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/unnamed.webp"/></a></figure></div><div id="0bc7840f-1d60-4a50-95a3-e5a1ec3772c7" style="width:56.25%" class="column"><p id="9d2f32d0-6724-478e-ba0a-7bf24ca08c2e" class=""><strong><a href="https://www.police.gov.hk/ppp_sc/03_police_message/fma/">香港警队流动应用程式</a></strong></p><blockquote id="c1ed9994-8e4d-4183-a878-5bb106a1a562" class="">加强与社会各界沟通。市民可透过智能电话使用此应用程式，随时随地获取警队最新资讯。如市民希望寻求警方协助(如遗失物品)，可透过应用程式的<strong>电子报案室</strong>功能进行联络</blockquote><ul id="d9bbc86a-8d5e-4f5b-9b39-95d5eeaf909a" class="bulleted-list"><li style="list-style-type:disc">电子报案室</li></ul><ul id="e77731c5-d422-44b3-822e-12c5dca4bd50" class="bulleted-list"><li style="list-style-type:disc">防止罪案建议</li></ul><ul id="8ae4bcf0-4a3b-4b45-82ac-c64529f0a93e" class="bulleted-list"><li style="list-style-type:disc">罪案统计</li></ul><ul id="fbaa9304-c8ce-449d-ba5e-efbe55aff326" class="bulleted-list"><li style="list-style-type:disc">根据GPS寻找就近警署</li></ul></div></div><hr id="17c21e51-aab6-45da-815e-41b7594cbb60"/><div id="053ff3ad-c0ec-42b9-874b-4293251103de" class="column-list"><div id="2d9af305-1044-49ab-96aa-05f31ab3bb26" style="width:43.75%" class="column"><figure id="2cffebb1-e58c-4006-a2fb-c3841e5e8cc4" class="image"><a href="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/qr-code.png"><img style="width:2255px" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/qr-code.png"/></a></figure></div><div id="938fccfa-f880-464d-ad8d-496fe7f084eb" style="width:56.25%" class="column"><p id="639e579f-581e-420d-801d-c57591029eb1" class=""><a href="http://weixin.qq.com/r/Fh395QjEslXNrUyG90gE">香港警队微信</a></p><blockquote id="8b3f57e3-8e97-4a72-a65a-5edadfce0342" class="">由香港警务处建立的官方公众号。为市民提供最新灭罪、防骗及公众安全等有用的警务资讯。</blockquote><ul id="456b79fb-11fd-4684-91f5-91785c13fd88" class="bulleted-list"><li style="list-style-type:disc">防骗锦囊</li></ul><ul id="0c22415d-4aa2-4ca5-801b-bc512bd45d1c" class="bulleted-list"><li style="list-style-type:disc">反恐资讯</li></ul><ul id="b9eb361f-63f9-49cf-8ffc-1ef32b989f7b" class="bulleted-list"><li style="list-style-type:disc">不同警队相关申请表格下载</li></ul><ul id="a5df9e03-51d8-4d4d-bd21-4368cbc45c83" class="bulleted-list"><li style="list-style-type:disc">电子报案快速入口</li></ul><ul id="93ff6022-7ccf-4a8f-9341-78fbfb655781" class="bulleted-list"><li style="list-style-type:disc">警察招募最新资讯</li></ul></div></div><hr id="ac68e796-66e9-43a6-8dfc-9b4ef4d48a75"/><div id="d826415f-af23-41ba-b9bf-f037b2c49908" class="column-list"><div id="c4fb1d6f-2add-4b00-9cc5-a9866e9b8fd1" style="width:43.75%" class="column"><figure id="3e5062cb-03d3-4427-a56a-f646a87e55f5" class="image"><a href="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/1200px-Sina_Weibo_logo.svg.png"><img style="width:384px" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/1200px-Sina_Weibo_logo.svg.png"/></a></figure></div><div id="a967b137-81d9-4944-a5a3-81fcecf5b462" style="width:56.25%" class="column"><p id="4f32ad1b-e70c-42d5-bb45-c76d7ca4d5b6" class=""><a href="https://weibo.com/hongkongpoliceforce">香港警队微博</a></p><blockquote id="d67876df-2659-40e8-af69-838a91449f31" class="">香港警务处官方微博。向市民提供公众安全、警队招募、防骗技巧及警队最新活动等资讯。</blockquote><ul id="918f62e2-2e5a-4334-82c7-546fe0e32c00" class="bulleted-list"><li style="list-style-type:disc">警声节目</li></ul><ul id="d857fb2a-39c9-46c0-8ee6-3c8fd2939187" class="bulleted-list"><li style="list-style-type:disc">案件报导</li></ul><ul id="2916cccd-23d5-41f5-9152-d1136ab01640" class="bulleted-list"><li style="list-style-type:disc">防骗小贴士</li></ul><ul id="97d84b76-7423-4a42-b4ee-2686de226a03" class="bulleted-list"><li style="list-style-type:disc">警队相关资讯</li></ul></div></div><hr id="369546ec-afc5-46f8-84ac-bf819ba104f2"/><div id="310c8698-516b-4112-a384-7c46243ff176" class="column-list"><div id="99709fe1-90e7-46b6-b194-2803df91e857" style="width:43.75%" class="column"><figure id="61c8f231-0e52-49ea-8a76-bfa685453783" class="image"><a href="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/qr-code%201.png"><img style="width:2277px" src="%E9%A6%99%E6%B8%AF%E8%AD%A6%E5%AF%9F%E8%A5%BF%E4%B9%9D%E9%BE%99%E6%80%BB%E5%8C%BA%E9%98%B2%E6%AD%A2%E7%BD%AA%E6%A1%88%E5%8A%9E%E5%85%AC%E5%AE%A4%205df3dbc612cb4608a22f0cdc15c991a6/qr-code%201.png"/></a></figure></div><div id="b5cd1999-8ec4-46af-8f0d-19240f4458d3" style="width:56.25%" class="column"><p id="8c35027e-84cf-4de0-b790-f7affc545edf" class=""><a href="https://b23.tv/NfSiOw5">电话骗案宣传片</a></p><blockquote id="5f99011c-aefd-40b0-b6f3-24952acbf035" class="">有鉴于电话骗案中八成的受害师生均来自内地，为提高港漂生们的防骗意识，由西九龙总区阿Sir制作的一条短片，各位可点击超连结或扫瞄二维码参看.</blockquote><ul id="1943e3ee-7898-4a49-b29a-f78dcef2e3b9" class="bulleted-list"><li style="list-style-type:disc">展示最常见的电骗种类</li></ul><ul id="10c151e3-4e2f-414f-9632-904ffc117fe6" class="bulleted-list"><li style="list-style-type:disc">识别骗徒的常用手段</li></ul><ul id="4f58ee64-a540-413a-9d34-a3c8035de008" class="bulleted-list"><li style="list-style-type:disc">提供遇到不明来电的应对方法</li></ul><ul id="e7b5a1be-bf4a-4164-95b3-07dc303c2b89" class="bulleted-list"><li style="list-style-type:disc">提高防骗意识</li></ul></div></div><hr id="a286d3b7-bad4-4421-b911-018af772e9ed"/><figure id="cb6833d7-5863-4943-afdb-d8368f28fecc"></figure></div></article></body></html>
